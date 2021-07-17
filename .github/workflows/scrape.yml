@@ -1,7 +1,6 @@
 name: Scrape latest OSCAR data
 
 on:
-  push:
   workflow_dispatch:
   schedule:
     - cron:  '1 5 * * *'
