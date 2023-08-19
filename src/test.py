@@ -21,8 +21,8 @@ with urllib.request.urlopen(f'https://gt-scheduler.github.io/crawler-v2/{semeste
     # save course_json and capacities_json to files in output
 
     with open(os.path.join('..', 'output', 'gt-scheduler-crawler-mirror', capacities_filename), 'w') as f:
-        json.dump(course_json, f)
+        json.dump(course_json, f, indent=2)
 
     with open(os.path.join('..', 'output', 'capacities_json-files', capacities_filename), 'w') as f:
-        json.dump(capacities_json, f)
+        json.dump(capacities_json, f, indent=2)
 
