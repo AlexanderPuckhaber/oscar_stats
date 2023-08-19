@@ -4,7 +4,7 @@ from datetime import date
 import urllib.request, json
 import os
 
-semester = '202202'
+semester = '202308'
 
 today = date.today()
 
