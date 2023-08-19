@@ -10,7 +10,7 @@ today = date.today()
 
 prefix_url = f'https://oscar.gatech.edu/pls/bprod/bwckschd.p_disp_detail_sched?term_in={semester}&crn_in='
 
-with urllib.request.urlopen(f'https://gt-scheduler.github.io/crawler/{semester}.json') as url:
+with urllib.request.urlopen(f'https://gt-scheduler.github.io/crawler-v2/{semester}.json') as url:
     course_json = json.loads(url.read().decode())
     #print(course_json)
 
