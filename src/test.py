@@ -30,6 +30,6 @@ for semester in semesters:
             with open(os.path.join('..', 'output', 'capacities_json-files', capacities_filename), 'w') as f:
                 json.dump(capacities_json, f, indent=2)
 
-    catch:
+    except:
         print("didn't work for semester:", semester)
 
